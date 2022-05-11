@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team_3</title>
+    <link rel="stylesheet" href="k.css">
+   
+</head>
+<body style="background-color:black;">
+    <section>
+        <div class="Bg"></div>
+        <header>
+            <a href="#" class="option" > <img src="Images/myLTI-logo-white (1).png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Back</a></li>
+            </ul>
+        </header>
+        <div class="vbg">
+           <video src="Videos/Network background(720P_HD).mp4"  muted autoplay loop class="bgvv" style="object-fit: contain;" ></video> 
+            <div class="overlay"></div>
+            <div class="text">
+              
+                <h1>Team-3</h1>
+                <h2>CSS Assessment</h2>
+                <h3>Click below icons to view details</h3>
+               
+            </div>
+        </div>
+       
+        
+            <ul class="thump">
+                <li><img src="Images/Picsart_22-05-07_20-28-16-992.png" alt="" onclick="vid('Videos/InShot_20220509_015404466.mp4');vidd()"  ></li>
+                <li><img src="Images/Picsart_22-05-07_20-38-58-368.png" alt="" onclick="vid('Videos/InShot_20220509_020158845.mp4')"></li>
+                <li><img src="Images/Picsart_22-05-07_20-50-14-427.png" alt="" onclick="vid('Videos/InShot_20220509_020425290.mp4')"></li>
+            </ul>
+       
+    </section>
+    <script>
+        var div = document.getElementsByClassName('text');
+        function vid(kg) {
+            document.querySelector('.bgvv').src = kg;
+        }
+        var div = document.getElementsByClassName('text');
+       function vidd() {
+           div.remove();
+       }
+      
+    </script>
+</body>
+</html>
